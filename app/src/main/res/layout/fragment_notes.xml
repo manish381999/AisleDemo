@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NotesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center_horizontal"
+        android:lineHeight="33.08dp"
+        android:text="@string/notes"
+        android:textColor="#000000"
+        android:textFontWeight="800"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center_horizontal"
+        android:lineHeight="21.47dp"
+        android:text="@string/personal_messages_to_you"
+        android:textColor="#000000"
+        android:textFontWeight="600"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        tools:targetApi="p" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@id/image1"
+        android:layout_width="344dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        app:riv_corner_radius="15dp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_medium"
+        android:lineHeight="26.95dp"
+        android:text="@string/interested_in_you"
+        android:textColor="#000000"
+        android:textFontWeight="800"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image1"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_medium"
+        android:lineHeight="17.89dp"
+        android:text="@string/premium_members_can_nview_all_their_likes_at_once"
+        android:textColor="#9B9B9B"
+        android:textFontWeight="800"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv3"
+        tools:targetApi="p" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Continue"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/rectangle_3"
+        android:fontFamily="@font/inter_medium"
+        android:lineHeight="23dp"
+        android:text="@string/upgrade"
+        android:textColor="@color/black"
+        android:textFontWeight="800"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@id/tv4"
+        app:layout_constraintTop_toTopOf="@id/tv4"
+        tools:targetApi="p" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@id/image2"
+        android:layout_width="168dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image2"
+        app:layout_constraintEnd_toStartOf="@+id/image3"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv4"
+        app:riv_corner_radius="15dp" />
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@id/image3"
+        android:layout_width="168dp"
+        android:layout_height="255dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image2"
+        app:layout_constraintTop_toBottomOf="@id/tv4"
+        app:riv_corner_radius="15dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
